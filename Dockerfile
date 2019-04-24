@@ -6,6 +6,7 @@ RUN apt update && apt upgrade -y \
   net-tools \
   traceroute \
   dnsutils \
+  tcpdump \
   vim
 
 ENTRYPOINT ["bash"]
