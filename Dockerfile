@@ -1,5 +1,5 @@
-FROM debian:latest
-ENTRYPOINT ["bash"]
+FROM debian:slim
+
 RUN apt update && apt upgrade -y \
   curl \
   iperf \
@@ -7,3 +7,5 @@ RUN apt update && apt upgrade -y \
   traceroute \
   dnsutils \
   vim
+
+ENTRYPOINT ["bash"]
