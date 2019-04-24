@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:stretch
 
 RUN apt update && apt upgrade -y \
   curl \
