@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 
 RUN apt update && apt upgrade -y \
   curl \
@@ -6,6 +6,8 @@ RUN apt update && apt upgrade -y \
   net-tools \
   traceroute \
   dnsutils \
+  iputils-ping \
+  iproute2 \
   tcpdump \
   vim
 
