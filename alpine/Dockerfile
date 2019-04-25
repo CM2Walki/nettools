@@ -9,6 +9,6 @@ RUN apk add --no-cache --virtual .build-deps \
 		tcpdump \
 		vim \
     && apk del .build-deps \
-    && apk del .gettext \
+    && apk del .gettext
 
 ENTRYPOINT ["sh"]
