@@ -8,7 +8,6 @@ RUN apk add --no-cache --virtual .build-deps \
 		bind-tools \
 		tcpdump \
 		vim \
-    && apk del .build-deps \
-    && apk del .gettext
+    && rm -rf /var/cache/apk/*
 
 ENTRYPOINT ["sh"]
